@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Weather App</title>
+  </head>
+  <style>
+    body {
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  color: #7c7c7c;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 0;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  color: #7c7c7c;
+  font-size: 16px;
+  font-weight: 100;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.weather-icon {
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+}
+
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+  </style>
+  <body>
+    <main>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+        </form>
+        <h1>Sydney NSW, Australia</h1>
+        <ul>
+          <li>Wednesday 22:00</li>
+          <li>Partly Cloudy</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="Cloudy icon"
+                class="weather-icon float-left"
+              />
+              <div class="float-left">
+                <span class="temperature">19</span
+                ><span class="units">°C | <a href="#">°F</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 77%</li>
+              <li>Wind: 8 km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+    <script>
+        let weather = {
+  paris: {
+    temp: 19.7,
+    humidity: 80,
+  },
+  tokyo: {
+    temp: 17.3,
+    humidity: 50,
+  },
+  lisbon: {
+    temp: 30.2,
+    humidity: 20,
+  },
+  "san francisco": {
+    temp: 20.9,
+    humidity: 100,
+  },
+  moscow: {
+    temp: -5,
+    humidity: 20,
+  },
+};
+
+let city = prompt("Enter a city?");
+city = city.toLowerCase();
+if (weather[city] !== undefined) {
+  let temperature = weather[city].temp;
+  let humidity = weather[city].humidity;
+  let celsiusTemperature = Math.round(temperature);
+  let fahrenheitTemperature = Math.round((temperature * 9) / 5 + 32);
+
+  alert(
+    `It is currently ${celsiusTemperature}°C (${fahrenheitTemperature}°F) in ${city} with a humidity of ${humidity}%`
+  );
+} else {
+  alert(
+    `Sorry we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`
+  );
+}
+    </script>
+  </body>
+</html>

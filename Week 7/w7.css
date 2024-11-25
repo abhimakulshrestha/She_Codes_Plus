@@ -1,0 +1,154 @@
+body{
+    background-color: #f9f7fe;
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .roboto-thin-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .roboto-light-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .roboto-bold-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .roboto-black-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+      
+}
+a{
+    color: #885df1;
+}
+.app{
+    background: white;
+    max-width: 600px;
+    margin:  45px auto;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    padding: 30px;
+    border-radius: 16px;
+}
+header{
+    border-bottom: 1px solid #f9f7fe ;
+    padding: 0 0 30px 0;
+}
+    
+main{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.app-city{
+    margin: 0;
+    font-size: 50px;
+    line-height: 48px;
+}
+.app-data{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: (39,33,66,0.4);
+}
+.app-data strong{
+    color:#f65282;
+}
+.weather-app-temperature-container {
+    display: flex;
+  }
+  
+  .weather-app-icon {
+    font-size: 44px;
+    margin-top: 22px;
+  }
+  
+  .weather-app-temperature {
+    font-size: 85px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .weatehr-app-unit {
+    margin-top: 16px;
+    font-size: 28px;
+  }
+
+.search-form-input{
+    background-color: #f9f7fe;
+    border: none;
+    border-radius: 6px;
+    width: 80%;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+.search-form-button{
+    background:#885df1;
+    margin-left:5px ;
+    padding : 15px 30px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+}
+footer{
+    border-top: 1px solid #f9f7fe;
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
